@@ -1,6 +1,6 @@
 <configuration>
 
-    <property name="LOG_FILE" value="logs/cr-debug.log" />
+    <property name="LOG_FILE" value="logs/hr-debug.log" />
 
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${LOG_FILE}</file>
