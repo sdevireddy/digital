@@ -1,6 +1,9 @@
-package com.zen.notify.dto;
+package com.zen.hr.dto;
 
 import java.time.ZonedDateTime;
+import java.util.List;
+
+import com.zen.hr.entity.Employee;
 
 public class ApiResponse<T> {
 
@@ -93,6 +96,11 @@ public class ApiResponse<T> {
         public ApiResponse<T> build() {
             return new ApiResponse<>(timestamp, status, error, path, totalRecords, pageSize, currentPage, totalPages, data);
         }
+
+		public Builder<List<Employee>> message(String message) {
+			// TODO Auto-generated method stub
+			return null;
+		}
     }
 
     public ZonedDateTime getTimestamp() {

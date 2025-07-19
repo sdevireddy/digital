@@ -1,6 +1,6 @@
 spring:
   application:
-    name: humanresources
+    name: hr-service
 
   datasource:
     url: jdbc:mysql://centerbeam.proxy.rlwy.net:56024/railway
@@ -25,8 +25,8 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.MySQLDialect
         multiTenancy: SCHEMA
-        tenant_identifier_resolver: com.zen.notify.filters.CurrentTenantIdentifierResolverImpl
-        multi_tenant_connection_provider: com.zen.notify.filters.MultiTenantConnectionProviderImpl
+        tenant_identifier_resolver: com.zen.hr.filters.CurrentTenantIdentifierResolverImpl
+        multi_tenant_connection_provider: com.zen.hr.filters.MultiTenantConnectionProviderImpl
 
   mail:
     host: smtp.gmail.com
@@ -48,7 +48,7 @@ eureka:
       defaultZone: http://localhost:8767/eureka
 
 server:
-  port: 8083
+  port: 8085
 
 logging:
   level:

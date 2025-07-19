@@ -1,14 +1,16 @@
-package com.zen.notify.utility;
+package com.zen.hr.util;
 
-import io.jsonwebtoken.*;
-
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.stereotype.Component;
-
-import com.zen.notify.filters.ZenUserDetails;
 
 import java.util.Date;
 import java.util.function.Function;
+
+import org.springframework.stereotype.Component;
+
+import com.zen.hr.filters.ZenUserDetails;
+
+import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.SignatureAlgorithm;
 
 @Component
 public class JwtUtil {

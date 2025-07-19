@@ -9,8 +9,8 @@ import org.springframework.security.web.authentication.WebAuthenticationDetailsS
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
-import com.zen.notify.service.ZenUserDetailsService;
-import com.zen.notify.utility.JwtUtil;
+import com.zen.hr.service.ZenUserDetailsService;
+import com.zen.hr.util.JwtUtil;
 
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;

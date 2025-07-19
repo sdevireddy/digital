@@ -6,7 +6,10 @@ import java.time.LocalDate;
 import java.util.List;
 
 public interface EmployeeAttendanceRepository extends JpaRepository<EmployeeAttendance, Long> {
-    List<EmployeeAttendance> findByEmployeeIdAndAttendanceDate(Long employeeId, LocalDate date);
-    List<EmployeeAttendance> findByEmployeeId(Long employeeId);
-}
+        List<EmployeeAttendance> findByEmployeeId(Long employeeId);
+        List<EmployeeAttendance> findByEmployeeIdAndAttendanceDate(Long employeeId, LocalDate attendanceDate);
+        List<EmployeeAttendance> findByEmployeeIdAndAttendanceDateBetween(Long employeeId, LocalDate startDate, LocalDate endDate);
+    }
+
+
 

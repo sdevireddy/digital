@@ -7,7 +7,7 @@ import java.util.List;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import com.zen.notify.entity.ZenUser;
+import com.zen.hr.entity.ZenUser;
 
 
 

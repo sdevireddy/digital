@@ -4,9 +4,9 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
+import com.zen.hr.entity.ZenUser;
 import com.zen.hr.filters.ZenUserDetails;
-import com.zen.notify.entity.ZenUser;
-import com.zen.notify.repository.UserRepository;
+import com.zen.hr.repository.UserRepository;
 
 @Service
 public class ZenUserDetailsService implements UserDetailsService {

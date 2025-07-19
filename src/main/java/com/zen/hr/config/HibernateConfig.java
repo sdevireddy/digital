@@ -19,8 +19,8 @@ import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-import com.zen.notify.filters.CurrentTenantIdentifierResolverImpl;
-import com.zen.notify.filters.MultiTenantConnectionProviderImpl;
+import com.zen.hr.filters.CurrentTenantIdentifierResolverImpl;
+import com.zen.hr.filters.MultiTenantConnectionProviderImpl;
 
 import jakarta.persistence.EntityManagerFactory;
 
@@ -56,7 +56,7 @@ public class HibernateConfig {
 
         LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
         em.setDataSource(dataSource);
-        em.setPackagesToScan("com.zen.notify.entity*");
+        em.setPackagesToScan("com.zen.hr.entity*");
         em.setJpaVendorAdapter(this.jpaVendorAdapter());
         em.setJpaPropertyMap(jpaPropertiesMap);
         return em;

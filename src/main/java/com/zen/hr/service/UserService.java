@@ -8,9 +8,11 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import com.zen.notify.entity.ZenUser;
-import com.zen.notify.exceptions.UserNotFoundException;
-import com.zen.notify.repository.UserRepository;
+import com.zen.hr.entity.ZenUser;
+import com.zen.hr.exceptions.UserNotFoundException;
+import com.zen.hr.repository.UserRepository;
+
+
 
 @Service
 public class UserService {
