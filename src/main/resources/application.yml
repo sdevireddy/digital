@@ -3,9 +3,9 @@ spring:
     name: hr-service
 
   datasource:
-    url: jdbc:mysql://centerbeam.proxy.rlwy.net:56024/railway
+    url: jdbc:mysql://localhost:3306/crm
     username: root
-    password: uTdHtgdIQitzGtGYcIAUrAjDDreTqqDU
+    password: john123
     driver-class-name: com.mysql.cj.jdbc.Driver
     hikari:
       maximum-pool-size: 10
@@ -38,12 +38,6 @@ spring:
           starttls:
             enable: true
 
-eureka:
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-    service-url:
-      defaultZone: http://localhost:8767/eureka
 
 server:
   port: 8085
