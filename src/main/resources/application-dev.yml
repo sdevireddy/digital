@@ -24,9 +24,6 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQLDialect
-        multiTenancy: SCHEMA
-        tenant_identifier_resolver: com.zen.hr.filters.CurrentTenantIdentifierResolverImpl
-        multi_tenant_connection_provider: com.zen.hr.filters.MultiTenantConnectionProviderImpl
 
   mail:
     host: smtp.gmail.com
@@ -40,12 +37,6 @@ spring:
           starttls:
             enable: true
 
-eureka:
-  client:
-    register-with-eureka: true
-    fetch-registry: true
-    service-url:
-      defaultZone: http://localhost:8767/eureka
 
 server:
   port: 8085

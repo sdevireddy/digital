@@ -24,9 +24,7 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQLDialect
-        multiTenancy: SCHEMA
-        tenant_identifier_resolver: com.zen.hr.filters.CurrentTenantIdentifierResolverImpl
-        multi_tenant_connection_provider: com.zen.hr.filters.MultiTenantConnectionProviderImpl
+
 
   mail:
     host: smtp.gmail.com
@@ -55,6 +53,6 @@ logging:
     com.zen.notify: DEBUG
     com.netflix: ERROR
   file:
-    name: logs/hr-debug.log
+    name: logs/digital-debug.log
   pattern:
     console: "%d{yyyy-MM-dd HH:mm:ss} [%X{requestId}] [%X{sessionId}] %-5level %logger{36} - %msg%n"
