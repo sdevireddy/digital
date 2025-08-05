@@ -2,6 +2,11 @@ spring:
   application:
     name: hr-service
 
+  # Disable Eureka client if not needed
+  cloud:
+    discovery:
+      enabled: false
+
   datasource:
     url: jdbc:mysql://localhost:3306/crm
     username: root
@@ -17,7 +22,7 @@ spring:
 
   jpa:
     hibernate:
-      ddl-auto: none
+      ddl-auto: update
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
     show-sql: true
@@ -44,7 +49,8 @@ server:
 
 logging:
   level:
-    com.zen.notify: DEBUG
+    com.zen.digital: DEBUG
+    com.zen.digital.service.CampaignSchedulerService: DEBUG
     com.netflix: ERROR
   file:
     name: logs/digital-debug.log
